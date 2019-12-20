@@ -52,7 +52,7 @@ object Task21 {
     }
 
     fun initData(): DoubleArray {
-        val scanner = Scanner(File("""C:\test\sizov.txt""".trimMargin())).apply { useLocale(Locale.US) }
+        val scanner = Scanner(File("""C:\test\test.txt""".trimMargin())).apply { useLocale(Locale.US) }
         val data = DoubleArray(PD.POINTS_COUNT)
 
         var i = 0

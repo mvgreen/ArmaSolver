@@ -13,8 +13,8 @@ import org.jfree.chart.title.LegendTitle
 import org.jfree.data.Range
 import org.jfree.data.xy.XYSeries
 import org.jfree.data.xy.XYSeriesCollection
-import org.jfree.ui.RectangleEdge
-import org.jfree.ui.RectangleInsets
+import org.jfree.chart.ui.RectangleEdge
+import org.jfree.chart.ui.RectangleInsets
 import java.awt.*
 import javax.swing.JFrame
 import kotlin.math.exp
@@ -174,7 +174,7 @@ object Plotter {
         with(g.panel.chart) {
             removeLegend()
             addLegend(LegendTitle(LegendItemSource { newLegend }))
-            legend.margin = RectangleInsets(1.0, 1.0, 1.0, 1.0)
+            legend.margin = RectangleInsets(1.0, 1.0,1.0, 1.0)
             legend.position = RectangleEdge.BOTTOM
             legend.backgroundPaint = Color.WHITE
             legend.frame = BlockBorder(Color.BLACK)
